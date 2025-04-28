@@ -189,11 +189,6 @@ body {
   padding: 10px;
 }
 
-/* Adicionando uma estrela antes dos itens do menu */
-.menu ul li::before {
-  content: "⭐ ";  /* Adiciona uma estrela antes do item */
-  font-size: 20px;
-}
 
 /* Adicionando um ícone de música antes do título da playlist */
 .playlist::before {

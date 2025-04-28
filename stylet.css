@@ -1,0 +1,159 @@
+
+/* css apenas da pagina cardapio */
+
+body {
+    font-family: Verdana, sans-serif;
+    color: #000;
+    margin: 0;
+    background-color: #D2B48C; 
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  .cardapio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+  }
+  
+  .colunas-menus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1 1 0;
+  }
+  
+  .coluna {
+    flex: 1 1 300px;
+    min-width: 280px;
+  }
+  
+  .menu-section {
+    margin-bottom: 30px;
+  }
+  
+  .menu-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #ddd;
+  }
+  
+  .menu-title h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    font-size: 13px;
+    padding: 8px 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  td:last-child {
+    text-align: right;
+    white-space: nowrap;
+  }
+  
+  small {
+    font-size: 12px;
+    color: #555;
+    display: block;
+  }
+  
+  .imagem-lateral img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    max-height: 1000px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  /* Estilo para o menu fixo */
+  .menu {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      z-index: 1000;
+      padding: 20;
+      height: 60px;
+      box-sizing: border-box;
+      margin: 0;
+  }
+  
+  /* Estilo para os itens dentro do menu */
+  .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+  }
+  
+  .menu ul li {
+      margin: 0 15px;
+  }
+  
+  .menu ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+      background-color: #7B3F00;
+  }
+  
+  /* Rodapé */
+.footer {
+    background-color: black; 
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 50px; 
+    display: flex;
+    justify-content: flex-end; 
+    padding-right: 10px; 
+    align-items: center; 
+  }
+  
+  .footer-content img {
+    height: 100%; 
+    margin-left: 10px; 
+  }
+  
+  /* Responsividade para dispositivos móveis */
+  @media screen and (max-width: 768px) {
+    .footer {
+      height: 30px; 
+      justify-content: center; 
+    }
+  
+    .footer-content img {
+      height: 60%; 
+    }
+  }
+
+ 
